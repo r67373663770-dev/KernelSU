@@ -1,0 +1,16 @@
+.idea
+.vscode
+CLAUDE.md
+AGENTS.md
+.DS_Store
+/target
+.cargo/config.toml
+__pycache__
+/dist
+/repack-config.json
+/userspace/ksud/.lkm_image_bootstrap.o
+
+# KSUPro local artifacts
+/manager/ksup/
+/ddk_build_wsl.sh
+/manager/app/src/main/jniLibs/

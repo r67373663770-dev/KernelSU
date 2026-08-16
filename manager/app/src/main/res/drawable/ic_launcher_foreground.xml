@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:translateX="24"
+        android:translateY="24"
+        android:scaleX="2.5"
+        android:scaleY="2.5">
+        <!-- Round bell body -->
+        <path
+            android:pathData="M12 3a9 9 0 0 1 0 18a9 9 0 0 1 0 -18Z"
+            android:strokeColor="#000000"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <!-- Mouth slit -->
+        <path
+            android:pathData="M3.9 16H20.1"
+            android:strokeColor="#000000"
+            android:strokeWidth="2"
+            android:strokeLineCap="round" />
+        <!-- Clapper ball -->
+        <path
+            android:pathData="M12 16.7a1.9 1.9 0 0 1 0 3.8a1.9 1.9 0 0 1 0 -3.8Z"
+            android:fillColor="#000000" />
+    </group>
+</vector>
