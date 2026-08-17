@@ -26,8 +26,9 @@ fun getGitDescribe(): String {
 }
 
 fun getVersionCode(): Int {
-    val commitCount = getGitCommitCount()
-    return 30000 + commitCount
+    // KSUPro fork: version is pinned so manager, ksud and kernel module stay
+    // aligned regardless of commit count on this branch.
+    return 30001
 }
 
 fun getVersionName(): String {

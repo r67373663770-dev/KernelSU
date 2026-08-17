@@ -10,17 +10,9 @@ const BOOTSTRAP_OBJECT: &str = "lkm_image_bootstrap.o";
 const PREPARED_BOOTSTRAP_OBJECT: &str = ".lkm_image_bootstrap.o";
 
 fn get_git_version() -> Result<(u32, String), std::io::Error> {
-    let output = Command::new("git")
-        .args(["rev-list", "--count", "HEAD"])
-        .output()?;
-
-    let output = output.stdout;
-    let version_code = String::from_utf8(output).expect("Failed to read git count stdout");
-    let version_code: u32 = version_code
-        .trim()
-        .parse()
-        .map_err(|_| std::io::Error::other("Failed to parse git count"))?;
-    let version_code = 30000 + version_code;
+    // KSUPro fork: version code is pinned so ksud, manager and kernel module
+    // stay aligned regardless of commit count on this branch.
+    let version_code: u32 = 30001;
 
     let version_name = String::from_utf8(
         Command::new("git")

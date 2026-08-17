@@ -23,7 +23,9 @@ object Natives {
     // 32336: new set_sepolicy ioctl
     // 32377: add set_init_pgrp ioctl
     // 32513: add uapi version
-    const val MINIMAL_SUPPORTED_KERNEL = 32513
+    // KSUPro fork: all components are pinned to 30001 (single-commit tree),
+    // so the minimal kernel version is our own baseline.
+    const val MINIMAL_SUPPORTED_KERNEL = 30001
 
     const val KERNEL_SU_DOMAIN = "u:r:ksu:s0"
 
